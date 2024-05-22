@@ -138,14 +138,20 @@ function App() {
           <h1 className='text-5xl'>Analyse Data Through Line Graphs</h1>
         </div>
         <div className='flex justify-center'>
-          <div className='w-full xl:w-2/3  rounded-lg p-4'>
+          <div className='w-full xl:w-2/3 rounded-lg p-4'>
             <Chartline data={data} />
           </div>
         </div>
       </div>
+      {/* Button for ChatBot */}
+      <button
+        onClick={() => navigate('/chatbot')}
+        className="fixed bottom-6 right-6 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+      >
+        Ask Question
+      </button>
     </div>
   );
 }
 
 export default App;
-
